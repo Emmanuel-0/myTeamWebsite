@@ -288,6 +288,7 @@ header {
 .directors {
   padding-top: 5rem;
   padding-bottom: 10rem;
+  background-color: #004047;
 }
 .director__info {
   display: flex;
