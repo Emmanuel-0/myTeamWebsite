@@ -448,9 +448,10 @@ header {
   /* background-color: brown; */
 
 }
-#addDirPhoto {
-  /* display: none; */
-}
+
+/* #addDirPhoto {
+   display: none; 
+} */
 
 #postion-name-div{
   width: 100%;
