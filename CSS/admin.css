@@ -386,7 +386,7 @@ header {
   left:0;
   right:0;
   z-index: 1;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(71,70,70,0.5);
 }
 
 #overlay  #modal{
@@ -420,7 +420,9 @@ header {
   height: 20%;
   /* position:absolute; */
   /* margin: 80px 80px 80px 80px; */
-  font-size: 18px; 
+  font-size: 30px; 
+  margin-left: 30px;
+  padding-bottom: 0px;
   /* padding-top: 50px; */
 
   /* background-color: green; */
@@ -441,14 +443,19 @@ header {
 #photo-div{
   width: 100%;
   /* height: 100px; */
-  height: 40%;
+  height: 35%;
+  margin-left: 30px;
   /* background-color: brown; */
 
+}
+#addDirPhoto {
+  /* display: none; */
 }
 
 #postion-name-div{
   width: 100%;
   height: 40%;
+  margin-left: 30px;
   /* background-color: black; */
 }
 
@@ -462,7 +469,7 @@ header {
 
 #photo-input{
   width: 100%;
-  height: 80%;
+  height: 60%;
   /* background-color: white; */
   /* display: none; */
 }
@@ -471,9 +478,17 @@ header {
 display: none;
 } */
 
+#addDirPhoto {
+  display: none;
+ }
+
+
+
 #initialPhoto {
- width: 100px;
- height: 100px;
+  width: 100px;
+  height: 100px;
+  background-color: #044b53;
+  clip-path: circle();
 }
 
 
@@ -481,6 +496,9 @@ display: none;
  /* cursor:pointer; */
  width: 300px;
  height: 300px;
+ font-size: 15px;
+ cursor: pointer;
+
 }
 
 #photo-label{
@@ -518,6 +536,10 @@ display: none;
   height: 50%;
   /* background-color: orangered; */
 }
+#position::placeholder {
+  font-size: 25px;
+  color: #574D4D;
+}
 
 #name{
   width: 100%;
@@ -526,10 +548,13 @@ display: none;
   font-size: 25px;
   margin-top: 50px;
   border: 0px;
-  
-
 }
 
+#name::placeholder {
+  font-size: 25px;
+  color: #574D4D;
+
+}
 
 
 #add-btn{
@@ -558,7 +583,9 @@ display: none;
   margin-top: 70px;
   margin-right: 60px;
   padding-right: 100px;
-
   }
 
+  .deleteDirector {
+    cursor: pointer;
+  }
 

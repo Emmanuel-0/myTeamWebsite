@@ -21,43 +21,47 @@
     </head>
     <body >
 
-        <div id="overlay">
-            <div id="modal">
-                <div id="dir-form">
-                    <div id="dir-title"><h2>ADD A NEW DIRECTOR</h2></div>
-                    <form id="director-form" action="#">
-                        <div id="photo-div">
-                            <div id="photo-input">
-                                <img src="assets/cam_1.png" alt="" id="initialPhoto">
-
-                                <input  type="file" name = "addDirPhoto"  id = "addDirPhoto"  required>
-                            </div>
-                            <div id="photo-label">
-                              <div for="addDirPhoto"  id = "addDirPhotoLabel" > UPLOAD PHOTO</div>
-                            </div>
+      <div id="overlay">
+        <div id="modal">
+            <div id="dir-form">
+                <div id="dir-title"><p>ADD A NEW DIRECTOR</p></div>
+                <form id="director-form" action="#">
+                    <div id="photo-div">
+                        <div id="photo-input">
+                            <img for="addDirPhoto" src="assets/dir_cam.png" alt="" id="initialPhoto" >
+                            
+                            <!-- <input  type="file" name = "addDirPhoto"  id="addDirPhoto"  required> -->
                         </div>
-                        <div id="postion-name-div">
-                            <div id="position-div">
-                                <input id="position" type="text" placeholder="Position" required>
-                            </div>
-                            <div id="name-div">
-                                <input id="name" type="text" placeholder="Name" required>
-                            </div>
+                        <div id="photo-label">
+                          <label for="addDirPhoto" id = "addDirPhotoLabel" > UPLOAD PHOTO</label>
+                          <input   type="file" name = "addDirPhoto"  id="addDirPhoto"   required>
+                          <!-- <div   id = "addDirPhotoLabel" > UPLOAD PHOTO</div> -->
                         </div>
-
-                        <div id="add-cancel">
-                            <button id="add-btn" type="submit">ADD</button>
-                            <button id="close-modal-btn" onclick="closeModal()">CANCEL</button>
+                    </div>
+                    <div id="postion-name-div">
+                        <div id="position-div">
+                            <input id="position" type="text" placeholder="Position" required>
                         </div>
-
-                    </form>
-                </div>
-
+                        <div id="name-div">
+                            <input id="name" type="text" placeholder="Name" required>
+                        </div>
+                    </div>
+                    
+                    <div id="add-cancel">
+                        <button id="add-btn" type="submit">ADD</button>
+                        <button id="close-modal-btn" onclick="closeModal()">CANCEL</button>
+                    </div>
+                    
+                </form>
             </div>
+            
         </div>
+    </div>
         <header class='header'>
             <nav class='nav__container'>
-              <img src="./assets/logo.svg" alt="Logo" class="nav__logoImg">
+              <a href="./index.html" class="nav__link">
+                <img src="./assets/logo.svg" alt="Logo" class="nav__logoImg">
+                </a>
 
               <button class="nav__mobileMenuToggle">
                 <i><svg xmlns="http://www.w3.org/2000/svg" width="20" height="17">
